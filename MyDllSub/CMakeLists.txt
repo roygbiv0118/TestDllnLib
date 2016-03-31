@@ -1,6 +1,6 @@
 ###MyDllSub
 
-aux_source_directory(. DLL_SRC)
+FILE(GLOB DLL_SRC "*.h" "*.cpp")
 
 add_definitions("-DMYDLLSUB_EXPORTS")
 

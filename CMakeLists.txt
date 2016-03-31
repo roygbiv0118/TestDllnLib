@@ -12,8 +12,8 @@ set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR}/Bin)
 
 add_subdirectory(testDllLib)
 
-add_subdirectory(MyLibSub)
+add_subdirectory(MyDllAdd)
 add_subdirectory(MyDllSub)
 
-add_subdirectory(MyDllAdd)
 add_subdirectory(MyLibAdd)
+add_subdirectory(MyLibSub)
