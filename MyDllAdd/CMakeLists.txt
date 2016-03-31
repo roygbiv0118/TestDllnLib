@@ -11,4 +11,6 @@ add_definitions("-DMYDLLADD_EXPORTS")
 
 add_library(MyDllAdd SHARED ${DLL_SRC})
 
+ADD_DEPENDENCIES(MyDllAdd MyDllSub MyLibSub)
+
 TARGET_LINK_LIBRARIES(MyDllAdd MyDllSub.lib MyLibSub.lib)
