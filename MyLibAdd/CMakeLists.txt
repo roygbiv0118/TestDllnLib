@@ -9,4 +9,5 @@ FILE(GLOB LIB_SRC "*.h" "*.cpp")
 
 add_library(MyLibAdd STATIC ${LIB_SRC})
 
+ADD_DEPENDENCIES(MyLibAdd MyDllSub MyLibSub)
 #TARGET_LINK_LIBRARIES(MyLibAdd MyDllSub.lib MyLibSub.lib) #Error!!!
